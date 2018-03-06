@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
   <title>Cardinal Solutions</title>
@@ -16,6 +16,25 @@
        width: 100%; 
       font-color: white;
        }
+    .column {
+            float: left;
+            width: 33.33%;
+            padding: 15px;
+            }
+
+/* Clear floats after the columns */
+    .row:after {
+                content: "";
+                display: table;
+                clear: both;
+                }
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+    @media (max-width:600px) {
+            .column {
+                    width: 100%;
+                    }
+     }
   </style>
 </head>
 
@@ -24,6 +43,22 @@
    <img src="pic-hero.png"/>
     <h1><font color="white">Explore our proven success of our experiences</font></h1>
   </div>
+  
+  <div class="row">
+  <div class="column">
+    <h2>Business Intelligence</h2>
+    <p>We use technology to turn data into knowledge that can help you manage  and monitor your business, from anywhere.</p>
+  </div>
+  <div class="column">
+    <h2>App Development</h2>
+    <p>Our mobile specialists work to create rich, easy-to-use consumer or enterprise experiences for iOS, Android.</p>
+  </div>
+  <div class="column">
+    <h2>Business Analytics</h2>
+    <p>Great strategy begins with listening. We learn about businesses from the inside out, and then propose improvements.</p>
+  </div>
+</div>
+
 <footer>
 <p>@2016 Cardinal Solutions. All rights reserved.</p>
 </footer>
